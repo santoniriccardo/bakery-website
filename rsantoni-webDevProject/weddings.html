@@ -1,0 +1,678 @@
+<!DOCTYPE html>   <!-- Tells the browser this is HTML 5 -->
+<html lang="en">  <!-- Root of the html document and is in English -->
+
+<head> 
+<!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+
+  <!-- META tags help search engines identify your content more easily -->
+  <meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+  <meta name="author" content="Riccardo Santoni">
+  <meta name="keywords" content="Carnegie Mellon University, Information Systems, resume">
+  <meta name="description" content="The Butterwood Bake Consortium">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+  <!-- External Links to CSS files -->
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+  <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/stylesmobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox.css">
+
+
+
+    <!-- External Links to JS files -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+  <script type="text/javascript" src="js/scripts.js" ></script>
+    <script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+
+    
+  <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+  <!-- The title will appear in the menu bar of the browser -->
+  <title>Butterwood Bake Consortium</title>      
+  <link rel="shortcut icon" href="images/logo.png">    
+
+  <script>
+     $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+  </script>
+  <script type="text/javascript">
+     $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+  </script>
+  <script type="text/javascript">
+     $(document).ready(function(){
+    $('.tabs').tabs();
+  });
+  </script>
+
+<script type="text/javascript">
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
+</script>
+  <script type="text/javascript">
+     $(document).ready(function(){
+    $('.carousel').carousel({
+      numVisible: 5,
+      dist: -50,
+      indicators: true,
+      
+    });
+  });
+  </script>
+
+  <script type="text/javaScript">
+  $(function() {
+    $("#gallery a").lightBox();
+  }); </script>
+
+  <script type="text/javascript">
+     $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+
+  <script type="text/javascript">
+     $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+  </script>
+
+  <script type="text/javascript">
+      $(document).ready(function(){
+    $('select').formSelect();
+  });
+  </script>
+  <script type="text/javascript"> $(document).ready(function(){
+    $('.slider').slider();
+  });
+        </script>
+  <script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+
+
+
+</head>
+    
+<body>
+  <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+       <a href="index.html" class="brand-logo center"> <img id="logo" src="images/logo.png" class="responsive" width="75px"></a>
+      <ul id="nav-mobile" class="right" >
+        <li class="active"><a href="weddings.html" class="center-align">Weddings</a></li>
+        <li><a href="orders.html">Orders</a> </li>
+      </ul>
+
+      <ul id="nav-mobile" class="left">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+     <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  </nav>
+  </div>
+  
+<div class="parallax-container" style="height: 400px">
+  <div class="container">
+        <br><br>
+        <h1 class="header center white-text">Weddings and Celebrations</h1>
+       
+        <div class="row center">
+          <a href="#weddings" id="download-button" class="btn-large waves-effect waves-light hoverable" >Weddings</a>
+        
+          <a href="#celebrations" id="download-button" class="btn-large waves-effect waves-light hoverable">Celebrations</a>
+      </div>
+        <br><br>
+
+      </div>
+      <div class="parallax"><img src="images/bk17.jpeg" style="filter: brightness(70%);"></div>
+    </div>
+      <div class="section" style="background-color: #faf7f3;">
+      <div class="container">
+
+        <div class="row">
+          <div class="col s12">
+            <div id="weddings" class="section scrollspy">
+            <h5 class="grey-text text-darken-3"> Weddings</h5>
+            <p class="grey-text text-darken-2">Weddings are such a joyous occasion and each one is different! The same is true of our wedding cakes. We have an almost unlimited combination of flavors and styles to choose from. </p>
+            <a class="waves-effect waves-light btn hoverable" style="background-color: #f1bb99;" href="#orders">Order Now!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m12 l8">
+          <div class="card hoverable">
+          
+    <div class="card-content">
+      <h5 class="grey-text text-darken-3">Wedding Information</h5>
+    </div>
+    <div class="card-tabs">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab"><a href="#bf">Batters and Fillings</a></li>
+        <li class="tab"><a class="active" href="#sizes">Sizes</a></li>
+        <li class="tab"><a href="#price">Pricing</a></li>
+        <li class="tab"><a href="#delicacy">Other Delicacies</a></li>
+      </ul>
+    </div>
+    <div class="card-content grey lighten-4">
+      <div id="bf">Our most popular batter is yellow, but we also offer red velvet, chocolate, marble, and others upon request. As for fillings, we recommend white buttercream icing, chocolate fudge icing, strawberry crème filling, vanilla pastry cream, or one of several fruit fillings (lemon, raspberry, apricot, strawberry, etc.). That being said, if you have something special in mind it can’t hurt to ask!</div>
+      <div id="sizes">To keep proportionality and maintain structure, wedding cakes come in certain sizes with certain tier dimensions. If the size of the wedding party falls in between cake sizes, we can offer additional sheet cakes up to the amount of slices required. </div>
+      <div id="price">Our wedding cakes vary in price, depending on type, size, and “extras” such as special fillings, pillars, etc. For example, the cakes seen above are in the $3.25 – $3.75 per serving range.</div>
+      <div id="delicacy">Our wedding cakes are really just the beginning. Lots of folks opt for Individual desserts (3” mini-cakes, cupcakes, etc.) and of course there’s always room in the celebration for Cookie Trays, Monogrammed Petit Fours, Junior Pastry Trays, Grooms’ Cakes, Shower Cakes, Monogrammed Cookies, Wedding Challah, Breakfast Trays, etc.</div>
+
+    </div>
+  </div>
+</div>
+      
+              
+
+          
+
+        <div class="col s12 m8 l4">
+          <div class="card">
+            <div class="card-panel hoverable" style="background-color: #f1bb99;">
+              <h5 class="grey-text text-darken-3"> Delivery </h5>
+              <span class="white-text">We co-ordinate with the reception venue, florist, etc. for the timing of the delivery of the cake. Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.
+        </span>
+
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <br>
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <h6 class="center grey-text text-darken-3">Some of the wedding cakes we have created:</h6>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+
+      <div class="col s12 m4 l2">
+       <img class="materialboxed z-depth-2" width="180" src="images/wed1.jpg" class="responsive">
+      </div>
+    
+      <div class="col s12 m4 l2">
+        <img class="materialboxed z-depth-2" width="180" src="images/wed2.jpg" class="responsive">
+      </div>
+
+      <div class="col s12 m4 l2">
+        <img class="materialboxed z-depth-2" width="180" src="images/wed3.jpg" class="responsive">
+      </div>
+
+      <div class="col s12 m4 l2">
+        <img class="materialboxed z-depth-2" width="180" src="images/wed4.jpg" class="responsive">
+      </div>
+
+      <div class="col s12 m4 l2">
+        <img class="materialboxed z-depth-2" width="180" src="images/wed5.jpg" class="responsive">
+      </div>
+
+      <div class="col s12 m4 l2">
+        <img class="materialboxed z-depth-2" width="180" src="images/wed6.jpg" class="responsive">
+      </div>
+      </div>
+    </div>
+    </div>
+        <!--
+        <div class="carousel carousel-slider center">
+            <div class="carousel-item white" href="#one!"><img src="images/wed1.jpg" width="400"></div>
+            <div class="carousel-item white" href="#two!"><img src="images/wed2.jpg" width="400"></div>
+            <div class="carousel-item white" href="#three!"><img src="images/wed3.jpg" width="400"></div>
+            <div class="carousel-item white" href="#four!"><img src="images/wed4.jpg" width="400"></div>
+            <div class="carousel-item white" href="#five!"><img src="images/wed5.jpg" width="400"></div>
+        </div>
+      -->
+        <!--
+    <div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!"><img src="images/wed1.jpg" width="400"></a>
+    <a class="carousel-item" href="#two!"><img src="images/wed2.jpg" width="400"></a>
+    <a class="carousel-item" href="#three!"><img src="images/wed3.jpg" width="400"></a>
+    <a class="carousel-item" href="#four!"><img src="images/wed4.jpg" width="400"></a>
+    <a class="carousel-item" href="#four!"><img src="images/wed5.jpg" width="400"></a>
+  </div>
+-->
+
+
+  </div>
+</div>
+
+  <div class="parallax-container" style="height: 150px">
+
+
+
+<div class="parallax"><img src="images/bk16sm.jpeg" style="filter: brightness(60%);"></div>
+  </div>
+
+  <div class="section" style="background-color: #faf7f3;">
+      <div class="container">
+
+        <div class="row">
+          <div class="col s12">
+            <div id="celebrations" class="section scrollspy">
+            <h5 class="grey-text text-darken-3">Celebrations</h5>
+            <p class="grey-text text-darken-2">Birthdays, anniversaries, showers, graduations, religious celebrations etc. We have baked special treats for each of life’s special events and can customize them to showcase your theme or ideas.    </p>
+            <a class="waves-effect waves-light btn hoverable" id="download-button" href="#orders">Order Now!</a>
+          </div>
+          </div>
+          </div>
+
+        <div class="row">
+          <div class="col s12 m12 l4">
+            <div class="card hoverable">
+              <div class="card-content">
+                <h6 class="center grey-text text-darken-3"> Sizes: </h6>
+
+                <p class="grey-text text-darken-2">
+We offer custom cake rounds sizes from 8”-12”. Sheet cakes can be ordered from the sizes of 1/4, 1/2, 3/4 and full.                 </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12 l4">
+            <div class="card hoverable">
+              <div class="card-content">
+                <h6 class="center grey-text text-darken-3"> Pricing: </h6>
+
+                <p class="grey-text text-darken-2">
+Our cakes vary in price, depending on type, size, and “extras” such as decorations and personalizations.                 </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m12 l4">
+            <div class="card hoverable">
+              <div class="card-content">
+                <h6 class="center grey-text text-darken-3"> Delivery: </h6>
+
+                <p class="grey-text text-darken-2">
+                  Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.
+
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+    <div class="parallax-container" style="height: 150px">
+    <div class="parallax"><img src="images/bk16sm.jpeg" style="filter: brightness(60%);"></div>
+    </div>
+
+    <div class="section" style="background-color: #faf7f3;">
+      <div class="container">
+
+        <div class="row">
+          <div class="col s12">
+            <h5 class="center grey-text text-darken-3">Cake Options</h5>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col s12 m12 l6">
+            <ul class="collapsible popout">
+              <li>
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>Batter</div>
+                <div class="collapsible-body"><span>
+                  <table class="centered">
+                    <tbody>
+          <tr>
+            <td>Chocolate</td>
+            <td>Chocolate Sweet Potato</td>
+            <td>Chocolate Beet</td>
+          </tr>
+          <tr>
+            <td>Chocolate Cinnamon</td>
+            <td>Espresso</td>
+            <td>Vanilla Olive Oil</td>
+          </tr>
+          <tr>
+            <td>Lavendar</td>
+            <td>Lemon</td>
+            <td>Rose</td>
+          </tr>
+          <tr>
+            <td>Poppy Seed</td>
+            <td>Black Sesame</td>
+            <td>Clementine</td>
+          </tr>
+            <tr>
+            <td>Blood Orange</td>
+            <td>Pumpkin</td>
+            <td>Pear Spice</td>
+          </tr>
+          <tr>
+            <td>Apple Spice</td>
+            <td>Banana Spice</td>
+            <td>Sweet Potato Spice</td>
+          </tr>
+          <tr>
+            <td>Cinnamon</td>
+            <td>Butternut Squash</td>
+            <td>Matcha Green Tea</td>
+          </tr>
+           <tr>
+            <td>Coconut</td>
+            <td>Carrot Spice</td>
+            <td>Tumeric</td>
+          </tr>
+           <tr>
+            <td>Pecan</td>
+            <td>Almond</td>
+            <td>Rosemary</td>
+          </tr>
+           <tr>
+            <td>Fig (Seasonal)</td>
+            <td>Peanut Butter</td>
+            <td>Berry</td>
+          </tr>
+           <tr>
+            <td>Berry Basil</td>
+            <td>Elderflower</td>
+            <td>Creme De Violette</td>
+          </tr>
+        </tbody>
+
+                  </table>
+                </span></div>
+              </li>
+            </ul> 
+          </div>
+
+          <div class="col s12 m12 l6">
+            <ul class="collapsible popout">
+              <li>
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>Buttercream</div>
+                <div class="collapsible-body"><span>
+                  <table class="centered">
+                    <tbody>
+          <tr>
+            <td>Vanilla</td>
+            <td>CVanilla Mascarpone</td>
+            <td>Chocolate</td>
+          </tr>
+          <tr>
+            <td>Chocolate Cinnamon</td>
+            <td>Mocha</td>
+            <td>Espresso</td>
+          </tr>
+          <tr>
+            <td>Cinnamon Mocha</td>
+            <td>Cinnamon Espresso</td>
+            <td>Tahini</td>
+          </tr>
+          <tr>
+            <td>Peanut Butter</td>
+            <td>Pistachio</td>
+            <td>Salted Almond</td>
+          </tr>
+            <tr>
+            <td>Cashew</td>
+            <td>Black Sesame</td>
+            <td>Matcha</td>
+          </tr>
+          <tr>
+            <td>Fresh Mint</td>
+            <td>Berry (Assorted)</td>
+            <td>Basil</td>
+          </tr>
+          <tr>
+            <td>Maple</td>
+            <td>Butternut Squash</td>
+            <td>Honey</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+                </span></div>
+              </li>
+            </ul> 
+          </div>
+
+        </div>
+
+        <div class="divider"></div>
+        <br>
+
+        <div class="card">
+          <div class="card-content">
+
+            <div class="row">
+        <div class="col s12">
+          <div id="orders" class="section scrollspy">
+       <h5 class="grey-text text-darken-3">Order Now :</h5>
+     </div>
+       <h6 class="grey-text text-darken-2"> Please fill out the below form to begin your custom cake order. Please note: We require at least 3 business days notice for cake orders.
+  Your order is not official until you have received email or phone confirmation from us. </h6>
+     </div>
+</div>
+
+
+          <form class="col s12">
+          <div class="row">
+        <div class="input-field col s12 l6">
+          <input placeholder="First Name" id="first_name" type="text" class="validate" required>
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s12 l6">
+          <input id="last_name" placeholder="Last Name" type="text" class="validate" required>
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+          <div class="row">
+            <div class="input-field col s12 l4">
+            <input placeholder="94040" id="zip_code" type="text" class="validate" required>
+          <label for="zip_code">Zip Code</label>
+            </div>
+
+            <div class="input-field col s12 l8">
+            <input placeholder="info@butterwood.com" id="email" type="email" required class="validate" required>
+          <label for="email">Email Address</label>
+            </div>
+          </div>
+          <div class="row">
+          <div class="input-field col s12 l4" required>
+    <select>
+      <option value="" disabled selected></option>
+      <option value="1">Chocolate</option>
+      <option value="2">Chocolate Sweet Potato</option>
+      <option value="3">Chocolate Beet</option>
+      <option value="4">Chocolate Cinnamon</option>
+      <option value="5">Espresso</option>
+      <option value="6">Vanilla Olive Oil</option>
+      <option value="7">Lavendar</option>
+      <option value="8">Lemon</option>
+      <option value="9">Rose</option>
+      <option value="10">Poppy Seed</option>
+      <option value="11">Black Sesame</option>
+      <option value="12">Clementine</option>
+      <option value="13">Blood Orange</option>
+      <option value="14">Pumpkin</option>
+      <option value="15">Pear Spice</option>
+      <option value="16">Apple Spice</option>
+      <option value="17">Banana Spice</option>
+      <option value="18">Sweet Potato Spice</option>
+      <option value="19">Cinnamon</option>
+      <option value="20">Butternut Squash</option>
+      <option value="21">Matcha Green Tea</option>
+      <option value="22">Coconut</option>
+      <option value="23">Carrot Spice</option>
+      <option value="24">Tumeric</option>
+      <option value="25">Pecan</option>
+      <option value="26">Almond</option>
+      <option value="27">Rosemary</option>
+      <option value="28">Fig (seasonal)</option>
+      <option value="29">Peanut Butter</option>
+      <option value="30">Berry</option>
+      <option value="31">Berry Basil</option>
+      <option value="32">Elderflower</option>
+      <option value="33">Creme De Violette</option>
+
+
+
+
+    </select>
+    <label>Choose your batter:</label>
+  </div>
+
+    <div class="input-field col s12 l4" required>
+    <select>
+      <option value="" disabled selected></option>
+      <option value="1">Olive Oil</option>
+      <option value="2">Vegan</option>
+    </select>
+    <label>Choose your base</label>
+  </div>
+
+<div class="input-field col s12 l4" required>
+    <select>
+      <option value="" disabled selected></option>
+      <option value="1">Vanilla</option>
+      <option value="2">Vanilla Mascarpone</option>
+      <option value="3">Chocolate</option>
+      <option value="4">Chocolate Cinnamon</option>
+      <option value="5">Mocha</option>
+      <option value="6">Espresso</option>
+      <option value="7">Cinnamon Mocha</option>
+      <option value="8">Cinnamon Espresso</option>
+      <option value="9">Tahini</option>
+      <option value="10">Peanut Butter</option>
+      <option value="11">Pistachio</option>
+      <option value="12">Salted Almond</option>
+      <option value="13">Cashew</option>
+      <option value="14">Black Sesame</option>
+      <option value="15">Matcha</option>
+      <option value="16">Fresh Mint</option>
+      <option value="17">Berry (Assorted)</option>
+      <option value="18">Basil</option>
+      <option value="19">Maple</option>
+      <option value="20">Honey</option>
+
+
+    </select>
+    <label>Choose your buttercream</label>
+  </div>
+
+
+<div class="row">
+          <div class="input-field col s10 offset-s1">
+            <textarea id="textarea1" class="materialize-textarea" data-length="1000"></textarea>
+          <label for="textarea1">Any other comments or questions:</label>
+          </div>
+        </div>
+
+
+</div>
+
+        <div class="row center">
+         
+            <button class="btn waves-effect waves-light btn-large hoverable" type="submit" name="action" id="download-button">Submit
+    <i class="material-icons right">send</i>
+  </button>
+        </div>
+       </form>
+        </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+  </div>
+    
+
+
+
+
+<footer class="page-footer"style="background-color: #f1bb99">
+  <div class="container">
+    <div class="row">
+    <div class="col l4 s12">
+          <h5 class="white-text">Butterwood Bake Consortium</h5>
+          <div class="divider"></div>
+          <p class="grey-text text-lighten-4">Opened in October 2015, Butterwood Bake Consortium is a dessert cafe located in the Lawrenceville neighbourhood of Pittsburgh, Pennsylvania. The bakery features cake and pie by the slice, custom whole cakes, as well as local KLVN coffee and espresso! They bake with organic Daisy Flour, Wholesome Sweeteners Organic Evaporated Cane Juice, and local, organic eggs.
+</p>
+
+
+        </div>
+        <div class="col l4 s12">
+          <a href="about.html"><h5 class="white-text">About</h5> </a>
+                    <div class="divider"></div>
+           <div class="row">
+            <div class="col s6">
+              <br> 
+           <h6><strong>Address:</strong> </h6> 
+           <br> <br>
+             <h6><strong>Hours:</strong> </h6> 
+          </div>
+
+            <div class="col s6">
+           <a href="https://goo.gl/maps/JXPigoYUxGq" target="_blank" class="white-text" onmouseover=""><p>5222 Butler St <br> Pittsburgh, PA <br>15201</p> </a>
+          <ul>
+            <li>Wed–Fri 12PM - 11PM</li>
+            <li>Sat 10AM - 11PM </li>
+            <li>Sun 10AM - 9PM </li>
+          </ul>
+          </div>
+
+          </div>
+        </div>
+        <div class="col l4 s12">
+          <h5 class="white-text">Contact</h5>
+                    <div class="divider"></div>
+
+          <ul>
+            <li><h6>Phone: </h6> 412 - 781 - 0218</li>
+            <li><a href="mailto:info@thebutterwood.com" class="white-text"> <p>info@thebutterwood.com </p></a></li>
+            <li><a href="https://www.instagram.com/thebutterwoodbakeconsortium/" target="_blank"><img id="logo" src="images/i1.png" width="35px"></a>
+        <a href="https://www.facebook.com/thebutterwoodbakeconsortium?ref=hl" target="_blank"><img id="logo" src="images/f1.png" width="35px"></a></li>
+          </ul>
+        </div>
+
+       
+    </div>
+  </div>
+</footer>
+
+
+</body>
+
+</html>

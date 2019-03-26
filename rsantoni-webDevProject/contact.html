@@ -1,0 +1,269 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head> 
+<!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Riccardo Santoni">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems, resume">
+	<meta name="description" content="The Butterwood Bake Consortium">
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
+
+	
+	<!-- External Links to CSS files -->
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+	<link rel="stylesheet" media="screen and (max-width: 480px)" href="css/stylesmobile.css" />
+
+    <!-- External Links to JS files -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+	<script type="text/javascript" src="js/scripts.js" ></script>
+		
+ 	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Butterwood Bake Consortium</title>      
+	<link rel="shortcut icon" href="images/logo.png">    
+
+	<script>
+		 $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+	</script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $('input#input_text, textarea#textarea1').characterCounter();
+  });
+  </script>
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+</head>
+    
+<body>
+  <div class="navbar-fixed">	
+    <nav>
+		<div class="nav-wrapper">
+			 <a href="index.html" class="brand-logo center"> <img id="logo" src="images/logo.png" class="responsive" width="75px"></a>
+			<ul id="nav-mobile" class="right" >
+				<li><a href="weddings.html" class="center-align">Weddings</a></li>
+				<li><a href="orders.html">Orders</a> </li>
+			</ul>
+
+			<ul id="nav-mobile" class="left">
+				<li><a href="about.html">About</a></li>
+				<li class="active"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+     <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+	</nav>
+	</div>
+
+
+
+<div class="parallax-container hide-on-small-only" style="height: 750px">
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="card" style="opacity: .9">
+      <div class="card-content">
+        <div class="row">
+        <div class="col s12">
+       <h4 class="grey-text text-darken-3"> Contact Us :</h4>
+       <h6 class="grey-text text-darken-2"> Please use the below form to inquire about any of our services. </h6>
+       <div class="divider"></div>
+     </div>
+</div>
+        <form action="mailto:infoneeded@butterwoodBC.com (test)" method="post" enctype="text/plain" class="col s12" >
+          <div class="row">
+        <div class="input-field col s12 l6">
+          <input placeholder="First Name" id="first_name" type="text" name="fname" class="validate" required>
+          <label for="first_name">First Name*</label>
+        </div>
+        <div class="input-field col s12 l6">
+          <input id="last_name" placeholder="Last Name" type="text" name="lname"class="validate" required>
+          <label for="last_name">Last Name*</label>
+        </div>
+      </div>
+          <div class="row">
+            <div class="input-field col s12 l4">
+            <input placeholder="94040" id="zip_code" type="text" name="zip code"class="validate" pattern="[0-9]{5}" >
+          <label for="zip_code">Zip Code</label>
+            </div>
+
+            <div class="input-field col s12 l8">
+            <input placeholder="info@butterwood.com" id="email" type="email" name="email" required class="validate" required>
+          <label for="email">Email Address*</label>
+            </div>
+          </div>
+
+          <div class="row">
+          <div class="input-field col s12 l8">
+            <textarea id="textarea1" class="materialize-textarea" name="inquiry"data-length="1000"></textarea>
+          <label for="textarea1">What would you like to inquire about?</label>
+          </div>
+        
+
+            <div class="input-field col s12 l4">
+              <label> <input type="checkbox" name="mL" name="email list"> <span>Would you like to receive <br>emails from us?</span></label>
+            </div>
+        </div>
+        
+        <div class="row center">
+         
+            <button class="btn waves-effect waves-light btn-large hoverable" type="submit" name="action" id="download-button">Submit
+    <i class="material-icons right">send</i>
+  </button>
+        </div>
+       </form>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="images/bk16.jpeg" style="filter: brightness(60%);"></div>
+  
+</div>
+
+
+<div class="parallax-container hide-on-med-and-up" style="height: 1000px">
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="card" style="opacity: .9">
+      <div class="card-content">
+        <div class="row">
+        <div class="col s12">
+       <h4 class="grey-text text-darken-3"> Contact Us :</h4>
+       <h6 class="grey-text text-darken-2"> Please use the below form to inquire about any of our services. </h6>
+       <div class="divider"></div>
+     </div>
+</div>
+        <form action="mailto:infoneeded@butterwoodBC.com (test)" method="post" enctype="text/plain" class="col s12" >
+          <div class="row">
+        <div class="input-field col s12 l6">
+          <input placeholder="First Name" id="first_name" type="text" name="fname" class="validate" required>
+          <label for="first_name">First Name*</label>
+        </div>
+        <div class="input-field col s12 l6">
+          <input id="last_name" placeholder="Last Name" type="text" name="lname"class="validate" required>
+          <label for="last_name">Last Name*</label>
+        </div>
+      </div>
+          <div class="row">
+            <div class="input-field col s12 l4">
+            <input placeholder="94040" id="zip_code" type="text" name="zip code"class="validate" pattern="[0-9]{5}" >
+          <label for="zip_code">Zip Code</label>
+            </div>
+
+            <div class="input-field col s12 l8">
+            <input placeholder="info@butterwood.com" id="email" type="email" name="email" required class="validate" required>
+          <label for="email">Email Address*</label>
+            </div>
+          </div>
+
+          <div class="row">
+          <div class="input-field col s12 l8">
+            <textarea id="textarea1" class="materialize-textarea" name="inquiry"data-length="1000"></textarea>
+          <label for="textarea1">What would you like to inquire about?</label>
+          </div>
+        
+
+            <div class="input-field col s12 l4">
+              <label> <input type="checkbox" name="mL" name="email list"> <span>Would you like to receive <br>emails from us?</span></label>
+            </div>
+        </div>
+        
+        <div class="row center">
+         
+            <button class="btn waves-effect waves-light btn-large hoverable" type="submit" name="action" id="download-button">Submit
+    <i class="material-icons right">send</i>
+  </button>
+        </div>
+       </form>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="images/bk16.jpeg" style="filter: brightness(60%);"></div>
+  
+</div>
+	
+
+<footer class="page-footer" style="background-color: #f1bb99;">
+	<div class="container">
+		<div class="row">
+		<div class="col l4 s12">
+          <h5 class="white-text">Butterwood Bake Consortium</h5>
+          <div class="divider"></div>
+          <p class="grey-text text-lighten-4">Opened in October 2015, Butterwood Bake Consortium is a dessert cafe located in the Lawrenceville neighbourhood of Pittsburgh, Pennsylvania. The bakery features cake and pie by the slice, custom whole cakes, as well as local KLVN coffee and espresso! They bake with organic Daisy Flour, Wholesome Sweeteners Organic Evaporated Cane Juice, and local, organic eggs.
+</p>
+
+
+        </div>
+        <div class="col l4 s12">
+          <a href="about.html"><h5 class="white-text">About</h5> </a>
+                    <div class="divider"></div>
+           <div class="row">
+           	<div class="col s6">
+           		<br> 
+         	 <h6><strong>Address:</strong> </h6> 
+         	 <br> <br>
+         	   <h6><strong>Hours:</strong> </h6> 
+         	</div>
+
+         		<div class="col s6">
+         	 <a href="https://goo.gl/maps/JXPigoYUxGq" target="_blank" class="white-text" onmouseover=""><p>5222 Butler St <br> Pittsburgh, PA <br>15201</p> </a>
+         	<ul>
+            <li>Wed–Fri 12PM - 11PM</li>
+            <li>Sat 10AM - 11PM </li>
+            <li>Sun 10AM - 9PM </li>
+        	</ul>
+         	</div>
+
+        	</div>
+        </div>
+        <div class="col l4 s12">
+          <h5 class="white-text">Contact</h5>
+                    <div class="divider"></div>
+
+          <ul>
+            <li><h6>Phone: </h6> 412 - 781 - 0218</li>
+            <li><a href="mailto:info@thebutterwood.com" class="white-text"> <p>info@thebutterwood.com </p></a></li>
+            <li><a href="https://www.instagram.com/thebutterwoodbakeconsortium/" target="_blank"><img id="logo" src="images/i1.png" width="35px"></a>
+				<a href="https://www.facebook.com/thebutterwoodbakeconsortium?ref=hl" target="_blank"><img id="logo" src="images/f1.png" width="35px"></a></li>
+          </ul>
+        </div>
+
+       
+    </div>
+	</div>
+</footer>
+	
+
+</body>
+
+</html>

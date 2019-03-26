@@ -1,0 +1,237 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head> 
+<!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Riccardo Santoni">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems, resume">
+	<meta name="description" content="The Butterwood Bake Consortium">
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<!-- External Links to CSS files -->
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+	<link rel="stylesheet" media="screen and (max-width: 480px)" href="css/stylesmobile.css" />
+
+    <!-- External Links to JS files -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+	<script type="text/javascript" src="js/scripts.js" ></script>
+		
+ 	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Butterwood Bake Consortium</title>      
+	<link rel="shortcut icon" href="images/logo.png">    
+
+	<script>
+		 $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+	</script>
+
+</head>
+    
+<body>
+	<div class="navbar-fixed">
+	<nav>
+		<div class="nav-wrapper" style="background-color: #f1bb99" style="opacity: .5">
+			 <a href="index.html" class="brand-logo center"> <img src="images/logo.png" class="responsive" width="75px"></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down" >
+				<li><a href="weddings.html" class="center-align">Weddings</a></li>
+				<li><a href="orders.html">Orders</a> </li>
+			</ul>
+
+			<ul id="nav-mobile" class="left" hide-on-med-and-down">
+				<li><a href="about.html">About</a></li>
+				<li class="active"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	</div>
+
+
+<div class="section" style="background-color: #faf7f3;"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+       <h3 class="grey-text text-darken-3"> Contact Us :</h3>
+       <h6 class="grey-text text-darken-2"> Please use the below form to inquire about any of our services. </h6>
+     </div>
+   </div>
+
+<div class="row">
+  <div class="col s10 offset-s1">
+<div class="card"> <div class="card-content">
+       <form>
+          <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="First Name" id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" placeholder="Last Name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+          <div class="row">
+            <div class="input-field col s4">
+            <input placeholder="94040" id="zip_code" type="text" class="validate">
+          <label for="zip_code">Zip Code</label>
+            </div>
+
+            <div class="input-field col s8">
+            <input placeholder="info@butterwood.com" id="email" type="email" required class="validate">
+          <label for="email">Email Address</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s8">
+              <input placeholder="How can we help?" id="inquiry" type="text" required class="validate"> 
+          <label for="inquiry">What can we help you with?</label>
+            </div>
+
+            <div class="input-field col s4">
+        <input type="checkbox" id="emaillist" class="filled-in" checked="checked" />
+        <span>Yes!</span>
+        <label for="emaillist"> Would you like to subscribe to our email list? </label>
+      </label>
+        </div>
+       </form>
+       </div>
+       </div>
+     </div>
+    </div>
+    </div>
+  </div>
+
+	
+
+
+<footer class="page-footer"style="background-color: #f1bb99;">
+	<div class="container">
+		<div class="row">
+		<div class="col l4 s12">
+          <h5 class="white-text">Butterwood Bake Consortium</h5>
+          <div class="divider"></div>
+          <p class="grey-text text-lighten-4">Opened in October 2015, Butterwood Bake Consortium is a dessert cafe located in the Lawrenceville neighbourhood of Pittsburgh, Pennsylvania. The bakery features cake and pie by the slice, custom whole cakes, as well as local KLVN coffee and espresso! They bake with organic Daisy Flour, Wholesome Sweeteners Organic Evaporated Cane Juice, and local, organic eggs.
+</p>
+
+
+        </div>
+        <div class="col l4 s12">
+          <a href="about.html"><h5 class="white-text">About</h5> </a>
+                    <div class="divider"></div>
+           <div class="row">
+           	<div class="col s6">
+           		<br> 
+         	 <h6><strong>Address:</strong> </h6> 
+         	 <br> <br>
+         	   <h6><strong>Hours:</strong> </h6> 
+         	</div>
+
+         		<div class="col s6">
+         	 <a href="https://goo.gl/maps/JXPigoYUxGq" target="_blank" class="white-text" onmouseover=""><p>5222 Butler St <br> Pittsburgh, PA <br>15201</p> </a>
+         	<ul>
+            <li>Wed–Fri 12PM - 11PM</li>
+            <li>Sat 10AM - 11PM </li>
+            <li>Sun 10AM - 9PM </li>
+        	</ul>
+         	</div>
+
+        	</div>
+        </div>
+        <div class="col l4 s12">
+          <h5 class="white-text">Contact</h5>
+                    <div class="divider"></div>
+
+          <ul>
+            <li><h6>Phone: </h6> 412 - 781 - 0218</li>
+            <li><a href="mailto:info@thebutterwood.com" class="white-text"> <p>info@thebutterwood.com </p></a></li>
+            <li><a href="https://www.instagram.com/thebutterwoodbakeconsortium/" target="_blank"><img src="images/i1.png" width="35px"></a>
+				<a href="https://www.facebook.com/thebutterwoodbakeconsortium?ref=hl" target="_blank"><img src="images/f1.png" width="35px"></a></li>
+          </ul>
+        </div>
+
+       
+    </div>
+	</div>
+</footer>
+	
+
+</body>
+
+</html>
+
+
+
+
+<div class="row">
+      <div class="col s4">
+         <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="images/wed1.jpg" class="responsive" width="180" class="materialboxed z-depth-2"> <!-- random image -->
+              
+            </li>
+            <li>
+              <img src="images/wed2.jpg" class="responsive" width="180" class="materialboxed z-depth-2"> <!-- random image -->
+              
+            </li>
+            <li>
+              <img src="images/wed3.jpg" class="responsive" width="180" class="materialboxed z-depth-2"> <!-- random image -->
+              
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="col s4 offset-s8">
+         <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="images/wed4.jpg" class="responsive" width="180" class="materialboxed z-depth-2"> <!-- random image -->
+            </li>
+            <li>
+              <img src="images/wed5.jpg" class="responsive" width="180" class="materialboxed z-depth-2"> <!-- random image -->
+            </li>
+            <li>
+              <img src="images/wed6.jpg" class="responsive" width="180" class="materialboxed z-depth-2"> <!-- random image -->
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+
+ <div id="content_gallery">
+      <div id="gallery">
+
+      <div class="col s12 m4 l2">
+        <div id="galleryThumbnail"><div id="thmbnlShadow">
+          <a href="images/wed1.jpg">
+          <img class="materialboxed z-depth-2" width="180" src="images/wed1.jpg" class="responsive"> </a>
+        </div>
+        </div>
+      </div>
+      <div class="col s12 m4 l2">
+        <div id="galleryThumbnail"><div id="thmbnlShadow">
+          <a href="images/wed1.jpg">
+          <img class="materialboxed z-depth-2" width="180" src="images/wed1.jpg" class="responsive"> </a>
+        </div>
+        </div>
+      </div>
